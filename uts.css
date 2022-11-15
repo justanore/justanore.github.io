@@ -1,0 +1,583 @@
+html {scroll-behavior: smooth;
+    transition: 0.4s;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.header {
+    position: relative;
+    min-height: 1px;
+}
+
+.fContainer {
+    display: flex;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.3) */
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+    margin-left: -700px;
+}
+
+.firstname {
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.lastname {
+    color: tomato;
+    padding-left: 5px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation li {
+    display: flex;
+    list-style-type: none;
+    padding: 8px;
+    flex-direction: row;
+}
+
+.navigation li a {
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navigation li a:hover {
+    color: rgb(255, 138, 117);
+    transition: all .3s ease-in-out;
+}
+
+.active {
+    background-color: tomato;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+.active:hover {
+    color: white !important;
+}
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+  
+  /* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+  /* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.profil-side {
+    color: white;
+    padding-left: 20px;
+}
+
+.profil-isi {
+    color: whitesmoke;
+    padding-left: 20px;
+}
+
+.tujuan-side {
+    color: white;
+    padding-left: 20px;
+}
+
+.tujuan-isi {
+    color: white;
+    padding-left: 20px;
+}
+
+.copyright-side {
+    color: whitesmoke;
+    padding-top: 240px;
+    padding-left: 10px;
+    font-size: small;
+}
+
+
+  /* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+  /* The button used to open the sidebar */
+.openbtn {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+  
+.openbtn:hover {
+    background-color: #444;
+}
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+}
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.home-title {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.image-home {
+    margin-left: 15%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    height: 400px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 4px solid;
+    float: left;
+    margin: 30px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 21.5%;
+    padding-top: 13%;
+}
+
+.image-home:hover .image {
+    opacity: 0.3;
+}
+
+.image-home:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: rgba(51, 51, 51, 0.037);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-align: center;
+}
+
+.text:hover {
+    color: rgb(255, 135, 114);
+    transition: all .5s ease-in-out;
+}
+
+
+.image2 {
+    opacity: 1;
+    display: block;
+    height: 400px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 4px solid;
+    float: left;
+    margin: 30px;
+}
+
+.middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 45.5%;
+    padding-top: 13%;
+}
+
+.image-home2:hover .image2 {
+    opacity: 0.3;
+}
+
+.image-home2:hover .middle2 {
+    opacity: 1;
+}
+
+.image3 {
+    opacity: 1;
+    display: block;
+    height: 400px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 4px solid;
+    float: left;
+    margin: 30px;
+    width: 350px;
+}
+
+.middle3 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 71.5%;
+    padding-top: 13%;
+}
+
+.image-home3:hover .image3 {
+    opacity: 0.3;
+}
+
+.image-home3:hover .middle3 {
+    opacity: 1;
+}
+
+.title-items>h2>a {
+    color: whitesmoke;
+    font-size: large;
+    padding-left: 18.5%;
+    text-decoration: none;
+    border: coral;
+}
+
+.title-items2>h2>a {
+    color: whitesmoke;
+    font-size: large;
+    padding-left: 45%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.title-items3>h2>a {
+    color: whitesmoke;
+    font-size: large;
+    padding-left: 70%;
+    text-decoration: none;
+}
+
+.link {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  
+.link:hover {
+    background-color: green;
+    color: white;
+}
+
+#tabel{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+#tabel td, #tabel th {
+    border: 5px inset black;
+    padding: 15px;
+}
+
+#tabel tr:hover {
+    background-color: green;
+}
+
+#tabel th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a, .dropbtn {
+    display: inline-block;
+    color: tomato;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    float: none;
+}
+  
+/* .dropdown-content a:hover {background-color: tomato} */
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.box-model1 {
+    background-color: goldenrod;
+    border: 7px solid;
+    outline-offset: 10px;
+    padding: 50px;
+    margin: 100px;
+}
+
+.box-model1>a {
+    text-decoration: none;
+}
+
+.box-model2 {
+    background-color: rgb(253, 153, 53);
+    border: 7px solid;
+    outline-offset: 10px;
+    padding: 50px;
+    margin: 100px;
+}
+
+.box-model3 {
+    background-color: lightblue;
+    border: 7px solid;
+    outline-offset: 10px;
+    padding: 50px;
+    margin: 100px;
+}
+
+.box-model3>a {
+    text-decoration: none;
+}
+
+.box-model4 {
+    background-color: lightcoral;
+    border: 7px solid;
+    outline-offset: 10px;
+    padding: 50px;
+    margin: 100px;
+}
+
+.box-model5 {
+    background-color: rgb(250, 86, 86);
+    border: 7px solid;
+    outline-offset: 10px;
+    padding: 50px;
+    margin: 100px;
+}
+
+.box-model5>a {
+    text-decoration: none;
+}
+
+.title {
+    opacity: 1;
+    font-size: 27px;
+    background-color: #FFB4A2;
+    margin-right: 80px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 20px;
+    width: 400px;
+    height: 70px;
+    border: double ;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #B5838D;
+}
+
+.trailer-title {
+    opacity: 1;
+    font-size: 27px;
+    background-color: #19bf82;
+    margin-right: 80px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 20px;
+    width: 400px;
+    height: 70px;
+    border: 10px solid #87d581;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-model-image {
+    background-color: goldenrod;
+    border: 2px solid;
+}
+
+.box-model1>a {
+    text-decoration: none;
+}
+
+.tabel{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+}
+
+.numbertext {
+    color: whitesmoke;
+    position: absolute;
+    margin-left: 465px;
+    margin-top: 8px;
+    font-size: small;
+}
+
+.copyright {
+	text-align: center;
+	font-family: Georgia, serif;
+	color: whitesmoke;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.account-box {
+	width: 400px;
+	background: #444;
+
+	margin: 90px auto;
+	padding: 50px 40px;
+	border-radius: 7px;
+}
+
+.judul-account-box {
+	text-align: center;
+	padding: 3px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-weight: bolder;
+    color: whitesmoke;
+    font-size: larger;
+}
+.isi-box-account {
+	box-sizing : border-box;
+	border-radius: 6px;
+	width: 100%;
+	padding: 10px;
+	font-size: 10pt;
+	margin-bottom: 25px;
+}
+.submit-button {
+	background: tomato;
+	color: whitesmoke;
+	font-size: 12pt;
+	width: 100%;
+	border: 1px solid grey;
+	border-radius: 10px;
+	padding: 15px 20px;
+	font-weight: 600;	
+}
+.submit-button:hover {
+	transform: scale(0.9);
+	cursor: pointer;
+}
+.form-account {
+	font-size: 12pt;
+	padding-bottom: 10px;
+	display: block;
+    color: whitesmoke;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    scroll-behavior: smooth;
+  }
+  
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  
