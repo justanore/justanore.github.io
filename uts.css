@@ -178,6 +178,10 @@ body {
     text-align: center;
 }
 
+.image-home {
+    margin-left: 220px;
+}
+
 .image {
     opacity: 1;
     display: block;
