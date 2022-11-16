@@ -134,7 +134,7 @@ body {
 
 .copyright-side {
     color: whitesmoke;
-    padding-top: 240px;
+    padding-top: 170px;
     padding-left: 10px;
     font-size: small;
 }
@@ -197,7 +197,7 @@ body {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    left: 21.5%;
+    left: 254px;
     padding-top: 13%;
 }
 
@@ -238,7 +238,7 @@ body {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    left: 45.5%;
+    left: 617px;
     padding-top: 13%;
 }
 
@@ -266,7 +266,7 @@ body {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    left: 71.5%;
+    left: 1009px;
     padding-top: 13%;
 }
 
