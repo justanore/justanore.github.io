@@ -270,7 +270,7 @@ body {
     padding-top: 13%;
 }
 
-.image-home3:hover .image3 {
+.image-homnume3:hover .image3 {
     opacity: 0.3;
 }
 
@@ -499,9 +499,9 @@ li.dropdown {
 .numbertext {
     color: whitesmoke;
     position: absolute;
-    margin-left: 465px;
+    margin-left: 420px;
     margin-top: 8px;
-    font-size: small;
+    font-size: smaller;
 }
 
 .copyright {
@@ -579,5 +579,3 @@ li.dropdown {
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
-
-  
